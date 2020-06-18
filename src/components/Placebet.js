@@ -60,7 +60,7 @@ class Placebet extends React.Component{
         }
         return cardlist;
       };
-      
+    
     render(){
         return (
             <div>
