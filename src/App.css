@@ -1,4 +1,9 @@
+.bet-field{
+  margin-top: 100px;
+}
+
 .search-bar{
+  margin-top: 50px;
   margin-left: 500px;
   margin-right: 500px;
 }
@@ -19,8 +24,8 @@
 
   .deal-btn {
     position: absolute;
-    left: 50%;
-    top: 25.5%;
+    left: 40%;
+    top: 50.5%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
@@ -63,3 +68,7 @@
     margin-top: 100px;
 }
 
+.login{
+  float: right;
+  margin-top:10px;
+}

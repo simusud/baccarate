@@ -2,7 +2,8 @@ import React from 'react';
 import Placebet from './Placebet';
 import PlayerCard from './PlayerCard';
 import BankerCard from './BankerCard';
-import '../App.css'
+import '../App.css';
+import Login from './Login'
 
 
 class App extends React.Component{
@@ -33,8 +34,12 @@ class App extends React.Component{
 
     render(){
         return(
-            <div className="ui container" >
-                <Placebet/>
+            <div className="ui container" > 
+                  
+                <Placebet />  
+                <Login />
+               
+                
                                
                     {/* <div className="cards">
                         <PlayerCard card={this.Rand()} num={this.cardnum}/>
