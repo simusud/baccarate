@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/baccarate/precache-manifest.51fb163aeb38890dde9ca695ce17b381.js"
+  "/baccarate/precache-manifest.95b8e7f0387e535bcbc445ce424e5bf9.js"
 );
 
 self.addEventListener('message', (event) => {

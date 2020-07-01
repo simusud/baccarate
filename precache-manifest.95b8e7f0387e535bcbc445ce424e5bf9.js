@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0af3f5154e63396147edc82a7e3dd2c",
+    "revision": "ab57f0bd1b559dc494b0258017270370",
     "url": "/baccarate/index.html"
   },
   {
-    "revision": "165c453c9629f067fc7b",
-    "url": "/baccarate/static/css/main.ecd0990c.chunk.css"
+    "revision": "f134aac58fe0f1934582",
+    "url": "/baccarate/static/css/main.53aa19e2.chunk.css"
   },
   {
-    "revision": "9aff5f8dbe6c91ab6194",
-    "url": "/baccarate/static/js/2.16b0d440.chunk.js"
+    "revision": "43d25ebf15eb3989a9d4",
+    "url": "/baccarate/static/js/2.f5560f3b.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/baccarate/static/js/2.16b0d440.chunk.js.LICENSE.txt"
+    "revision": "d82fd225bbe3586c002cd89db0a0d1d9",
+    "url": "/baccarate/static/js/2.f5560f3b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "165c453c9629f067fc7b",
-    "url": "/baccarate/static/js/main.2e3b7c39.chunk.js"
+    "revision": "f134aac58fe0f1934582",
+    "url": "/baccarate/static/js/main.e3a6efeb.chunk.js"
   },
   {
     "revision": "7513cba312e94d5f5de2",
