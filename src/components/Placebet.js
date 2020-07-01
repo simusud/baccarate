@@ -23,8 +23,7 @@ class Placebet extends React.Component{
         super(props);
         this.state = {val:'',
             showModal: false ,
-            tx:'',
-            enteredName:''
+            tx:''
         };
     
         // I've just put these binding in the constructor 
@@ -43,7 +42,7 @@ class Placebet extends React.Component{
         const txObj = new IconBuilder.CallTransactionBuilder()
           .from(metadata.publicAddress)
           .to('cxccce3d3c2f999536499753535eba96a6a6b8344a')
-          .value(IconAmount.of(2, IconAmount.Unit.ICX).toLoop())
+          .value(IconAmount.of(this.state.val, IconAmount.Unit.ICX).toLoop())
           .stepLimit(IconConverter.toBigNumber(1000000))
           .nid(IconConverter.toBigNumber(3))
           .nonce(IconConverter.toBigNumber(1))
@@ -123,7 +122,7 @@ class Placebet extends React.Component{
     render(){
         return (
             <div className="bet-field">
-                <div className="search-bar ui segment">
+                {/* <div className="search-bar ui segment"> */}
                     <form  className="ui form">
                         <div className="field">
                             <label>Place Bet</label>
@@ -134,7 +133,7 @@ class Placebet extends React.Component{
                             />
                         </div>
                     </form>
-                </div>
+                {/* </div> */}
                     <div className={`deal-btn ${(!this.state.val & !this.isLoggedIn)? 'inactive' : ''}`}
                         onClick={this.handlerSendTransaction} 
                         > 
@@ -145,12 +144,22 @@ class Placebet extends React.Component{
                 
                 
                 <div>
-                <a
-                    href={`https://bicon.tracker.solidwallet.io/transaction/${this.state.tx}`}
-                    target="_blank"
-                  >
-                    {this.state.tx}
-                </a>
+                    {this.state.tx ? (
+                    <div>
+                        <div>Send transaction success</div>
+                        <div className="info">
+                        <a
+                            href={`https://bicon.tracker.solidwallet.io/transaction/${this.state.tx}`}
+                            target="_blank"
+                        >
+                            {this.state.tx}
+                        </a>
+                        </div>
+                    </div>
+                    ) : (
+                    <div />
+                    )}
+                
                 </div>
 
 
