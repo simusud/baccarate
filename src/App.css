@@ -12,7 +12,11 @@
   margin-right: 300px;
   margin-top: 20px;
 }
-
+.banker{
+  margin-left: 300px;
+  margin-right: 100px;
+  
+}
 .deal-btn,
 .action-btns {
   pointer-events: all;
@@ -26,7 +30,7 @@
   .deal-btn {
     position: absolute;
     left: 50%;
-    top: 50.5%;
+    top: 60.5%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }

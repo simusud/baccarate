@@ -3,7 +3,14 @@ import { Card, CardStyles } from 'react-casino';
 
 
   const PlayerCard = (props) => {
-    console.log(props.card)
+    
+    const item=[]
+    for (let index = 0; index < props.card.length; index+=2){
+
+      item.push(<Card suit={props.card[index]} face={props.card[index+1]} />)
+      
+    }
+    // console.log(item)
     return (
       <div className="player-container">
         <div id="leftdiv" className="player-card-header">
@@ -11,11 +18,16 @@ import { Card, CardStyles } from 'react-casino';
         </div>
         <div id="leftdiv" className="player-card">
           
-          <CardStyles />
-          <Card suit={props.card[0]} face={props.card[1]} />
-          <Card suit={props.card[2]} face={props.card[3]} />
-          <Card suit={props.card[4]} face={props.card[5]} />
+        <CardStyles />
           
+          {item}
+            
+          
+        
+          {/* <Card suit={props.card} face={props.card} />
+          {/* <Card suit={props.card[2]} face={props.card[3]} /> */}
+          {/* <Card suit={props.card[4]} face={props.card[5]} /> */}
+        
         </div>
       </div>
     );

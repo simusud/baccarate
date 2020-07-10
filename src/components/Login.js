@@ -69,7 +69,7 @@ export default function Login() {
               <div className="info">
                 <a
                   href={`https://bicon.tracker.solidwallet.io/address/${publicAddress}`}
-                  target="_blank"
+                  rel="noopener noreferrer" target="_blank"
                 >
                   {publicAddress}
                 </a>
